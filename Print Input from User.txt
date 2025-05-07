@@ -1,0 +1,5 @@
+number = int(input("Enter an integer: "))
+char = str(input("Enter an character: ")[0])
+string = str(input("Enter a String: "))
+
+print(number, char, string)
