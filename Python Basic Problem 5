@@ -1,0 +1,10 @@
+# Write a program to get firstName and lastName and n as input and print fullName that is firstName+lastName for n times.
+
+
+firstName = str(input("Enter First Name: "))
+lastName = str(input("Enter Last Name: "))
+
+num = int(input("Enter a num: "))
+
+for i in range(num):
+    print(firstName + lastName)
