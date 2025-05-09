@@ -1,0 +1,10 @@
+# Write a program to take x and print multiples of x till 1000.
+
+userInput = int(input("Enter a number: "))
+i = 1;
+res = 0
+
+while res < 1000:
+    res = i*userInput
+    print(res)
+    i += 1
