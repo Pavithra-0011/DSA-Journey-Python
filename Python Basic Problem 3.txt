@@ -1,0 +1,17 @@
+# Write a program using switch case which takes a value and prints the respective Size.
+
+size = int(input("Enter Your Size: "))
+
+match size:
+    case 29:
+        print("Small")
+    case 30:
+        print("Medium")
+    case 38:
+        print("Large")
+    case 42:
+        print("XLarge")
+    case _:
+        print("Invalid")
+
+
