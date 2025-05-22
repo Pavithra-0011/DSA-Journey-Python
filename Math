@@ -1,0 +1,13 @@
+************************** PROBLEM 1 **********************
+Count Digits in a number :
+n = 325345
+count = 0
+
+while n > 0:
+    n = n//10
+    count += 1
+print(count)
+
+OP : 6 
+
+
