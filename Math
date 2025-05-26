@@ -10,4 +10,16 @@ print(count)
 
 OP : 6 
 
+************************* PROBLEM 2 ************************
+n=346788
+pal=0
+while n > 0:
+    rem = n % 10
+    pal = pal*10 + rem
+    n = n//10
+print(pal)
+
+OP:
+887643
+
 
