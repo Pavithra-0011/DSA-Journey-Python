@@ -22,4 +22,15 @@ print(pal)
 OP:
 887643
 
+********************* PROBLEM 3 ***************************
+//Swapping Numbers
+a = 10
+b = 15
+temp = 0
+
+temp = a
+a = b
+b = temp
+
+print("Swapped Numbers: a= ", a,"b= ", b)
 
