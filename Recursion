@@ -1,0 +1,9 @@
+sum_ = 0
+n = 10
+def printSum(n):
+    if n==0:
+        return 0
+    else:
+        return n + printSum(n-1)
+
+print(printSum(n))
