@@ -21,3 +21,24 @@ def countZeros(n):
     return countZeros(n//10)
         
 print(countZeros(n))
+
+************************ COUNT DIGITS ****************************
+n = 2345678
+def CountDigits(n):
+    if n == 0:
+        return 0
+    else:
+        return 1 + CountDigits(n//10)
+
+print(CountDigits(n))
+
+********************** SUM OF DIGITS *****************************
+n = 456
+def CountDigits(n):
+    rem = n%10
+    if n == 0:
+        return 0
+    else:
+        return rem + CountDigits(n//10)
+
+print(CountDigits(n))
