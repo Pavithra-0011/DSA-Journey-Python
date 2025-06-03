@@ -7,3 +7,17 @@ def printSum(n):
         return n + printSum(n-1)
 
 print(printSum(n))
+
+************************** COUNT ZEROS *************************
+n= 2030406
+count = 0
+def countZeros(n):
+    global count
+    if n == 0:
+        return count
+    rem = n % 10
+    if rem == 0:
+        count += 1
+    return countZeros(n//10)
+        
+print(countZeros(n))
