@@ -42,3 +42,39 @@ def CountDigits(n):
         return rem + CountDigits(n//10)
 
 print(CountDigits(n))
+
+************************ PRINT ELEMENTS IN ARRAY ***********************
+arr = [1,2,3,4,5,6,7]
+
+def printArray(a, i, n):
+    if i>=n:
+        return;
+    print(arr[i])
+    printArray(a,i+1,n)
+n = len(arr)
+print(printArray(arr,0, n))
+
+************************ PRINT INDEX OF TARGET IN ARRAY ***********************
+arr = [1,2,3,4,5,6,7]
+
+def printArray(a, i, n, target):
+    if i>=n:
+        return -1;
+    if(arr[i] == target):
+        return i
+    else:
+        return printArray(a,i+1,n, target)
+n = len(arr)
+print(printArray(arr,0, n, 5))
+
+
+************************ PRINT SUM OF ARRAY ***********************
+arr = [1,2,3,4,5]
+def printArray(a, i, n):
+    if i>=n:
+        return 0;
+    else:
+        return a[i] + printArray(a,i+1,n)
+n = len(arr)
+print(printArray(arr, 0, n))
+
