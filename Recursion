@@ -78,3 +78,42 @@ def printArray(a, i, n):
 n = len(arr)
 print(printArray(arr, 0, n))
 
+
+************************ CHECK IF SORTED USING RECURSION ***********************
+arr = [1,1,2,3,4,5]
+i = 0
+n = len(arr)
+def SortedArray(a,i,n):
+    if i>=n-2:
+        return "Sorted"
+    if arr[i] <= arr[i+1]:
+        return SortedArray(a,i+1,n)
+    else:
+        return "Not Sorted"
+
+print(SortedArray(arr,i,n))
+
+
+************************ DIVISORS OF A NUMBER *****************************
+n = 4
+i = 1
+def divisors(n, i):
+    if i > n:
+        return
+    if n%i == 0:
+        print(i)
+    divisors(n, i+1)
+
+divisors(n,i)
+
+*********************** POWER OF A NUMBER *****************************
+base = 2
+power = 3
+
+def PowerofNum(base, power): 
+    if power == 0:
+        return 1
+    else:
+        return base * PowerofNum(base, power-1)
+
+print(PowerofNum(base,power))
